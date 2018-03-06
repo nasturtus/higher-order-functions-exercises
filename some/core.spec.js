@@ -33,7 +33,7 @@ describe("core", function() {
     expect(core.truePossibilities(badInput)).toEqual(false);
   });
 
-  it("#lostCarcosa", function() {
+  it.only("#lostCarcosa", function() {
     var goodInput = [
       "Strange is the night where black stars rise,",
       "And strange moons circle through the skies,",
