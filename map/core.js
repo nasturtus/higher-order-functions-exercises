@@ -2,16 +2,9 @@ function multiplyBy10(array) {
   return array.map(element => element * 10)
 }
 
+const vowellised = word => {return word.split('').filter(chr => chr === 'a' || chr === 'e' || chr === 'i' || chr === 'o' || chr === 'u') .join('')}
 function onlyVowels(array) {
-  return array.map(word => {
-    return vowellise(word)
-  })
-}
-
-function vowellise(word) {
-  var vowelledArray = word.split('').filter(chr => chr === 'a' || chr === 'e' || chr === 'i' || chr === 'o' || chr === 'u') 
-  var vowelledString = vowelledArray.join('')
-  return vowelledString
+  return array.map(vowellised)
 }
 
 function doubleMatrix(array) {

@@ -16,7 +16,6 @@ function productAll(array) {
 function luckyNumbers(array) {
   // Your lucky numbers are: 30, 48, 11, 5, 32.
   var str = "Your lucky numbers are: ";
-  var b = ", ";
   return array
     .reduce((a, b) => {
       return a + b + ", ";
