@@ -7,8 +7,8 @@ function onlyVowels(array) {
   return array.map(vowellised)
 }
 
-function doubleMatrix(array) {
-  return array.map(arr => arr.map(elem => elem * 2))
+function doubleMatrix(matrix) {
+  return matrix.map(arr => arr.map(elem => elem * 2))
 }
 
 function onlyNames(array) {

@@ -1,26 +1,22 @@
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
+const adder = (accumulator, currentValue) => accumulator + currentValue;
 function sum(array) {
-  return array.reduce(reducer);
+  return array.reduce(adder);
 }
 
-function productAll(array) {
-  return array
-    .reduce((a, b) => {
-      return a.concat(b);
-    }, [])
-    .reduce((accumulator, currentValue) => {
-      return accumulator * currentValue;
-    });
+const multiply = (a, b) => a * b;
+const flatten = (a, b) => a.concat(b);
+function productAll(matrix) {
+  return matrix.reduce(flatten).reduce(multiply);
 }
 
+const getString = (a, b) => a + b + ", ";
 function luckyNumbers(array) {
-  // Your lucky numbers are: 30, 48, 11, 5, 32.
-  var str = "Your lucky numbers are: ";
-  return array
-    .reduce((a, b) => {
-      return a + b + ", ";
-    }, str)
-    .trim().slice(0, -1) + '.';
+  return (
+    array
+      .reduce(getString, "Your lucky numbers are: ")
+      .trim()
+      .slice(0, -1) + "."
+  );
 }
 
 module.exports = {
