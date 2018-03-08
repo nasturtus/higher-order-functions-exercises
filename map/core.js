@@ -4,6 +4,8 @@ function multiplyBy10(array) {
 
 const vowellised = word => {return word.split('').filter(chr => 'aeiou'.includes(chr)).join('')}
 function onlyVowels(array) {
+  // nice solution! my only suggestion would be to give your function a descriptive and expressive name
+  // e.g. vowelizeWord() or removeConsonants()
   return array.map(vowellised)
 }
 

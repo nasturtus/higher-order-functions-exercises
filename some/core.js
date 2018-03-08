@@ -20,6 +20,7 @@ function truePossibilities(input) {
 // the phrase (using some).
 function lostCarcosa(input) {
   return input.some(sentence => sentence.split(' ').some(word => word === 'Lost'));
+  // nice solution!
 }
 
 module.exports = {
